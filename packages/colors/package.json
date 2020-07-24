@@ -46,6 +46,5 @@
     "name": "@freight-trust/carbon-colors",
     "sassDir": "scss",
     "needs": "^1.3.0"
-  },
-  "gitHead": "ff543b3d3dbbf51170a185c0ecff62b7dca253c7"
+  }
 }
