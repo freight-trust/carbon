@@ -1,7 +1,7 @@
 {
   "name": "@freight-trust/carbon-icons-react",
   "description": "React components for icons in digital and software products using the Carbon Design System",
-  "version": "10.13.0",
+  "version": "0.0.1",
   "license": "Apache-2.0",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -29,11 +29,11 @@
     "clean": "rimraf es lib umd"
   },
   "dependencies": {
-    "@freight-trust/carbon-icon-helpers": "^10.9.0"
+    "@freight-trust/carbon-icon-helpers": "^0.0.1"
   },
   "devDependencies": {
     "@freight-trust/carbon-icon-build-helpers": "^0.8.0",
-    "@freight-trust/carbon-icons": "^10.13.0"
+    "@freight-trust/carbon-icons": "^0.0.1"
   },
   "sideEffects": false,
   "gitHead": "ff543b3d3dbbf51170a185c0ecff62b7dca253c7"

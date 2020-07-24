@@ -1,7 +1,7 @@
 {
   "name": "@freight-trust/ft-import",
   "description": "Sass helper for importing files only once.",
-  "version": "10.3.0",
+  "version": "0.0.1",
   "license": "Apache-2.0",
   "repository": "#",
   "bugs": "#",
