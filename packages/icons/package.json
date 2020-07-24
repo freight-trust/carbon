@@ -1,0 +1,40 @@
+{
+  "name": "@freight-trust/carbon-icons",
+  "description": "Icons for digital and software products using the Carbon Design System",
+  "version": "10.13.0",
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "repository": "https://github.com/freight-trust/carbon/tree/master/packages/icons",
+  "bugs": "https://github.com/freight-trust/carbon/issues",
+  "files": [
+    "es",
+    "lib",
+    "scss",
+    "svg",
+    "build-info.json",
+    "metadata.json"
+  ],
+  "keywords": [
+    "ibm",
+    "elements",
+    "carbon",
+    "carbon-elements",
+    "carbon-design-system",
+    "components",
+    "react"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "yarn clean && node tasks/build.js && bundler sassdoc \"scss/*.scss\"",
+    "ci-check": "node tasks/ci-check.js",
+    "clean": "rimraf es lib metadata.json svg",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "@freight-trust/carbon-icon-build-helpers": "^0.8.0"
+  },
+  "gitHead": "ff543b3d3dbbf51170a185c0ecff62b7dca253c7"
+}

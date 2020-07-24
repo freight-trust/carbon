@@ -1,0 +1,44 @@
+{
+  "name": "@freight-trust/carbon-themes",
+  "description": "Themes for applying color in the Carbon Design System",
+  "version": "10.14.0",
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "repository": "https://github.com/freight-trust/carbon/tree/master/packages/themes",
+  "bugs": "https://github.com/freight-trust/carbon/issues",
+  "keywords": [
+    "ibm",
+    "elements",
+    "carbon",
+    "carbon-elements",
+    "carbon-design-system",
+    "components",
+    "react"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rimraf es lib umd scss/generated",
+    "build": "yarn clean && bundler bundle src/index.js --name CarbonThemes && node tasks/build.js && bundler check \"scss/*.scss\" && bundler sassdoc \"scss/**/*.scss\""
+  },
+  "dependencies": {
+    "@freight-trust/carbon-colors": "^10.11.0",
+    "@freight-trust/carbon-layout": "^10.11.0",
+    "@freight-trust/carbon-type": "^10.12.0",
+    "color": "^3.1.2"
+  },
+  "devDependencies": {
+    "@freight-trust/carbon-cli-reporter": "^10.3.0",
+    "@freight-trust/carbon-scss-generator": "^10.9.0",
+    "@freight-trust/carbon-test-utils": "^10.10.0",
+    "change-case": "^4.1.1",
+    "core-js": "^3.6.5",
+    "fs-extra": "^8.1.0",
+    "js-yaml": "^3.13.0",
+    "node-sass": "^4.13.1",
+    "rimraf": "^3.0.0"
+  },
+  "gitHead": "ff543b3d3dbbf51170a185c0ecff62b7dca253c7"
+}

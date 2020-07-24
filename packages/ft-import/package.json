@@ -1,0 +1,25 @@
+{
+  "name": "@freight-trust/ft-import",
+  "description": "Sass helper for importing files only once.",
+  "version": "10.3.0",
+  "license": "Apache-2.0",
+  "repository": "#",
+  "bugs": "#",
+  "keywords": [
+    "components",
+    "react"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "bundler sassdoc \"scss/*.scss\""
+  },
+  "eyeglass": {
+    "exports": false,
+    "name": "@freight-trust/ft-import",
+    "sassDir": "scss",
+    "needs": "^1.3.0"
+  },
+  "gitHead": "#"
+}
