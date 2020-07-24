@@ -1,3 +1,5 @@
 @freight-trust
 @freight
 node_modules
+_migrations_packages/
+
